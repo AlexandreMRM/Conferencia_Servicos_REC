@@ -22,6 +22,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copie todo o conteúdo do diretório local para o contêiner
 COPY . .
 
-EXPOSE 8086
+EXPOSE 8080
 
-CMD ["streamlit", "run", "app.py", "--server.port=8086", "--server.enableCORS=false"]
+CMD ["streamlit", "run", "Conferencia_Reservas_Recife.py", "--server.port=8080"]
